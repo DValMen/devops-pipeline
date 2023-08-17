@@ -18,7 +18,7 @@ jobs:
         java-version: '11'
         distribution: 'zulu'
 
-    - name: Compile Maven
+    - name: Compile Gradle
       run: |
-        chmod +x mvnw
-        ./mvnw clear compile 
+        chmod +x gradlew
+        ./gradlew build
